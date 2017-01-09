@@ -110,7 +110,7 @@ function getAir(border)
 
 
 const World = require('prismarine-world');
-const Chunk = require('prismarine-chunk')(require("./version"));
+const Chunk = require('prismarine-chunk')("1.9");
 
 function generateLine(startingPoint,direction,length) {
   return range(0,length).map(i => startingPoint.plus(direction.scaled(i)));

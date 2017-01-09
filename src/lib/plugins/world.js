@@ -100,6 +100,7 @@ module.exports.player=function(player,serv,settings) {
       z: chunkZ,
       chunk: column
     }, ({x, z, chunk}) => {
+      //console.log(chunk);
       player._client.write('map_chunk', {
         x: x,
         z: z,
